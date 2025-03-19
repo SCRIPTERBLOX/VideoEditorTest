@@ -6,3 +6,5 @@ Asked Google AI for a png reading thing that seems to output the image width hei
 
 After some thinking I belive i understand how we can figure out the positions for the pixels -- 19 Mar
 
+So i thought this works by having the bytes by kinda like this [255, 255, 255, 255, 255, 255, 255, 255 etc]
+My approach would have mabey worked if the data was actually like that

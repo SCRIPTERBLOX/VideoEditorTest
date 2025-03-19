@@ -104,6 +104,21 @@ try:
         b = data[i+2] # e.g. loop I+2
         pixels.append((r, g, b)) # add this info into one color value
 
+    with open("data.txt", "w") as f:  # Open file in write mode
+        for item in data:
+            f.write(str(item) + "\n")
+
+    lastPixel = ()
+    lastPixelOccurances = 0
+    for pixel in pixels:
+        if pixel == lastPixel:
+            lastPixelOccurances += 1
+        else:
+            print(str(lastPixel)+", "+str(lastPixelOccurances))
+            lastPixel = pixel
+            lastPixelOccurances = 1
+
+
     # Main game loop
     running = True
     while running:
