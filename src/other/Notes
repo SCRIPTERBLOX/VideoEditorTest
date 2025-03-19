@@ -2,3 +2,7 @@ First i got code from Google AI -- 19 Mar
 
 I decide to first try understand .png as it seems related (possibly not but I wouldnt that that yet) -- 19 Mar
 
+Asked Google AI for a png reading thing that seems to output the image width height Color Type and bit depth correctly -- 19 Mar
+
+After some thinking I belive i understand how we can figure out the positions for the pixels -- 19 Mar
+
