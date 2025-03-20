@@ -287,7 +287,11 @@ if __name__ == "__main__":
                     screen.fill((0, 0, 0))
 
                     # now go through the gotten pixels and draw them to the screen
-                    for pixelI in range(width*height):
+                    for y in range(height):
+                        for x in range(width):
+                            pygame.draw.rect(screen, pixel_values[x+y*width], pygame.Rect(x, y, 1, 1))
+
+                    """for pixelI in range(width*height):
                         # only info given is image width and height and pixel col for pixel index
                         # get the pixel index
                         color = pixel_values[pixelI] # that was surprisingly simpel
@@ -313,7 +317,7 @@ if __name__ == "__main__":
 
                         # well does this work?
 
-                        pygame.draw.line(screen, color, [xPos, yPos], [xPos, yPos], 1)
+                        pygame.draw.rect(screen, color, pygame.Rect(xPos, yPos, 1, 1))"""
 
 
                     # Update the display
